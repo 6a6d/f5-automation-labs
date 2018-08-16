@@ -213,8 +213,8 @@ An HTTP POST to the ``/mgmt/tm/security/firewall/policy/{{afm_policy}}/rules`` e
 
     {
         "kind": "tm:security:firewall:policy:rules:rulesstate",
-        "name": "default_deny",
-        "fullPath": "default_deny",
+        "name": "global_default_deny",
+        "fullPath": "global_default_deny",
         "generation": 11464,
         "selfLink": "https://localhost/mgmt/tm/security/firewall/policy/~Common~global_default_deny/rules/default_deny?ver=13.1.0.8",
         "action": "drop",
@@ -267,7 +267,7 @@ An HTTP POST to the ``/mgmt/tm/security/firewall/policy/{{afm_policy}}/rules`` e
 			"iruleSampleRate": 1,
 			"log": "no",
 			"status": "enabled",
-			"placeBefore": "default_deny",
+			"placeBefore": "global_default_deny",
 			"destination": {
 				"addressLists": [ 
 				"/Common/google-dns_address_list" 
